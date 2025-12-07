@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-marker: "Permanent Marker", cursive;
+}
+
+body, 
+.app-bg, 
+.scaling-wrapper, 
+.deck-container, 
+.searchbar-container, 
+button, 
+input, 
+label,
+div,
+span,
+p {
+  font-family: var(--font-marker);
+}
+
+/*  APP BACKGROUND WRAPPER   */
+.app-bg {
+  width: 100%;
+  min-height: 100vh;           
+  display: block;               
+  position: relative;
+
+  background-image: url("./assets/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  overflow-x: hidden;          
+}
+
+.scaling-wrapper {
+  width: 90%;                   
+  max-width: 1800px;            
+  margin: 0 auto;              
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;                   
+
+  padding-top: 2rem;
+}
+
+* {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.led {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #330000;
+  box-shadow: 0 0 2px #000;
+  transition: background 0.15s, box-shadow 0.15s;
+}
+
+.led.on {
+  background: #ff2a2a;
+  box-shadow: 0 0 6px #ff2a2a, 0 0 10px #ff0000;
+}

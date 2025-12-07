@@ -1,0 +1,34 @@
+.function-col {
+  position: absolute;
+  top: 49%;
+  left: 30%;
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  pointer-events: auto;
+}
+
+.func-btn {
+  width: 170%;
+  height: auto;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+
+  transition: transform 0.1s ease, filter 0.1s ease;
+}
+
+.func-btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.func-btn:active {
+  transform: translateY(4px);
+}
+
+.func-btn.active {
+  filter: brightness(1.4) drop-shadow(0 0 6px red);
+}

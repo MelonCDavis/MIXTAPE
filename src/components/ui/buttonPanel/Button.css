@@ -1,0 +1,52 @@
+.deck-button {
+  width: 14%;                    
+  height: 100%;
+  background-image: url("../../assets/btn.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+  position: relative;
+
+  transition: 
+    transform 0.08s ease-out,
+    filter 0.08s ease-out;
+}
+
+.deck-button:hover {
+  filter: brightness(1.2);
+}
+
+.deck-button.pressed {
+  transform: translateY(6%) scaleY(0.88);
+  filter: brightness(0.85);
+}
+
+.deck-button.active {
+  filter: brightness(1.35) saturate(1.6);
+}
+
+.led {
+  position: absolute;
+  width: 22%;
+  height: 22%;
+  top: -30%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background: #300;
+  border-radius: 2px;
+  box-shadow: inset 0 0 4px #100;
+  opacity: 0.3;
+}
+
+.led-on {
+  background: #ff1a1a;
+  opacity: 1;
+
+  box-shadow:
+    0 0 3px #f00,
+    0 0 6px #f00,
+    0 0 10px #f33,
+    inset 0 0 5px #ff4444;
+}

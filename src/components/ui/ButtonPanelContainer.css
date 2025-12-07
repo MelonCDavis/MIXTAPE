@@ -1,0 +1,93 @@
+.button-panel-wrapper {
+  position: absolute;
+
+
+  top: 75.7%;
+  left: 4%;
+  width: 55%;
+  height: 12%;
+
+  pointer-events: auto;
+  z-index: 9999;
+}
+
+.volume-col {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 6%;
+  height: 100%;
+  pointer-events: auto;
+}
+
+.favorite-col {
+  position: absolute;
+  top: 0%;
+  left: 14%;
+  width: 6%;
+  height: 100%;
+  pointer-events: auto;
+}
+
+.function-col {
+  position: absolute;
+  top: 2%;
+  left: 24%;
+  width: 35.3%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  pointer-events: auto;
+}
+
+.mode-col {
+  position: absolute;
+  top: 0%;
+  left: 63%;
+  width: 18%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  pointer-events: auto;
+}
+
+.func-btn,
+.fav-btn,
+.mode-btn {
+  width: 30%;  
+  height: auto;
+  background: none;
+  border: none;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.func-btn img,
+.fav-btn img,
+.mode-btn img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.led {
+  width: 20%;
+  height: 12%;
+  background: #300;
+  opacity: 0.3;
+  margin: 0 auto 4px auto;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+.led.on,
+.led-on {
+  background: red;
+  opacity: 1;
+  box-shadow:
+    0 0 4px red,
+    0 0 8px red,
+    0 0 12px red;
+}
