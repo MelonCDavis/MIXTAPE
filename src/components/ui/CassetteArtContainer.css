@@ -1,0 +1,35 @@
+.cassette-art-outer {
+  position: absolute;
+  top: 13%;
+  left: 16%;
+  width: 24%;
+  height: 15%;
+  transform: rotate(-73deg);
+  transform-origin: center;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cassette-art-inner {
+  width: 100%;
+  aspect-ratio: 0.74 / 1;
+  overflow: hidden;
+  background: #000;
+  border-radius: 5%;
+}
+
+.cassette-art-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  object-position: center;
+  display: block;
+}
+
+.cassette-art-placeholder {
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
