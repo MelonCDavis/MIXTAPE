@@ -1,12 +1,9 @@
 .playlist-container {
   position: absolute;
-
-  width: 30%;    
-  height: 90%;  
-
-  right: 3.4%;     
+  width: 30%;
+  height: 90%;
+  right: 3.4%;
   top: 6%;
-
   background: rgba(0,0,0,0.55);
   border: 1.5% solid rgba(255,255,255,0.12);
   border-radius: 3%;
@@ -14,7 +11,6 @@
     inset 0 0 6px rgba(0,0,0,0.7),
     0 0 4px rgba(0,0,0,0.3);
   overflow: hidden;
-
   pointer-events: auto;
 }
 
@@ -42,14 +38,14 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-
-  padding: 3% 2%;
-  margin-bottom: 2%;
-
+  padding: 2.6% 2%;
+  margin-bottom: 3%;
   background: rgba(255,255,255,0.05);
   border-radius: 4%;
   cursor: pointer;
   transition: background 0.15s ease;
+  font-size: 15px;      
+  letter-spacing: 0.03em;
 }
 
 .playlist-item:hover {
@@ -58,21 +54,22 @@
 
 .playlist-track-number {
   width: 12%;
+  min-width: 12%;
+  text-align: right;
   color: #ff3b3b;
   opacity: 0.9;
+  font-size: 13px;       
+  font-weight: bold;
+  padding-right: 8px;
 }
 
 .playlist-track-title {
   flex-grow: 1;
   color: white;
-  letter-spacing: 0.05em;
-}
-
-.playlist-empty {
-  color: #ccc;
-  opacity: 0.6;
-  text-align: center;
-  margin-top: 20%;
+  font-size: 15px;       
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .playlist-item.active {
@@ -81,9 +78,9 @@
   box-shadow: 0 0 8px #00ff6a, inset 0 0 6px #00ff6a;
 }
 
-.playlist-track-title {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 80%;
+.playlist-empty {
+  color: #ccc;
+  opacity: 0.6;
+  text-align: center;
+  margin-top: 20%;
 }

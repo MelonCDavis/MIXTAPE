@@ -1,20 +1,25 @@
-.deck-container {
+.deck-outer {
   position: relative;
-
-  width: 53%;                
-  max-width: 1800px;         
-  aspect-ratio: 2885 / 2553; 
-
-  pointer-events: none;    
+  width: 100%;
+  height: 100%;
 }
 
-.deck-skin {
+.deck-container {
+  position: relative;
+  width: 53%;                
+  max-width: 1800px;
+  aspect-ratio: 2885 / 2553; 
+  pointer-events: none;
+  transition: transform 0.35s ease;
+}
+
+.deck-container.shifted {
+  transform: translateX(18%);  
+}
+
+.deck-bg {
   width: 100%;
   height: auto;
   display: block;
   pointer-events: none;
-}
-
-.deck-container {
-  position: relative;  
 }

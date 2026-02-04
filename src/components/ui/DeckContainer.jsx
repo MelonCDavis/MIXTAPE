@@ -10,17 +10,12 @@ import PlaylistDropdownContainer from "./PlaylistDropdownContainer";
 import { useMusicPlayer } from "../../MusicPlayer.jsx";
 
 export default function DeckContainer() {
-
-  const {
-    playlist,
-    currentTrack,
-    loadTrack,
-    play
-  } = useMusicPlayer();
+  const { playlist, currentTrack, loadTrack, play, isFavesOpen } =
+    useMusicPlayer();
 
   return (
-    <div className="deck-container">
-      <img src={uiSkin} alt="cassette deck skin" className="deck-skin" />
+    <div className={`deck-container ${isFavesOpen ? "shifted" : ""}`}>
+      <img src={uiSkin} alt="Cassette deck" className="deck-bg" />
 
       <CassetteArtContainer />
       <TitleArtistContainer />

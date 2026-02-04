@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./SearchBarContainer.css";
 
-export default function SearchBarContainer({ onSearch }) {
+export default function SearchBarContainer({ onSearch, ledOn }) {
   const [query, setQuery] = useState("");
   const [focused, setFocused] = useState(false);
 
@@ -16,7 +16,13 @@ export default function SearchBarContainer({ onSearch }) {
         
         <div className="search-label">SEARCH</div>
 
-        <div className={`search-led ${focused || query ? "led-on" : ""}`}></div>
+        <div
+          className={
+            `search-led ${
+              ledOn ? "on" : focused || query ? "led-on" : ""
+            }`
+          }
+        ></div>
 
         <input
           className="search-input"

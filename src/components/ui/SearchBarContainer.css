@@ -40,7 +40,8 @@
   background: #222;
   border: 1px solid #666;
   color: #ddd;
-  font-family: monospace;
+  font-family: "Permanent Marker";
+  font-size: 100%;
   padding: 0 8px;
   border-radius: 3px;
 }
@@ -85,4 +86,29 @@
     0 0 6px red,
     0 0 12px red,
     0 0 20px #ff3b3b;
+    animation: searchPulse 1.2s ease-in-out infinite;
+}
+
+@keyframes searchPulse {
+  0% {
+    background: red;
+    box-shadow:
+      0 0 6px red,
+      0 0 12px red,
+      0 0 20px #ff3b3b;
+  }
+  50% {
+    background: #ff4d4d;
+    box-shadow:
+      0 0 10px #ff4d4d,
+      0 0 18px #ff4d4d,
+      0 0 28px #ff1a1a;
+  }
+  100% {
+    background: red;
+    box-shadow:
+      0 0 6px red,
+      0 0 12px red,
+      0 0 20px #ff3b3b;
+  }
 }
